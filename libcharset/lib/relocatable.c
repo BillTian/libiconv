@@ -26,7 +26,13 @@
 #endif
 
 #define _GL_USE_STDLIB_ALLOC 1
-#include <config.h>
+/*#include <config.h>*/
+#define NO_XMALLOC 1
+
+/* [2014-12-25 13:45:48 Bill Tian] */
+#define DEPENDS_ON_LIBICONV 1
+#define HAVE_ICONV 1
+/*#define DEPENDS_ON_LIBCHARSET 1*/
 
 /* Specification.  */
 #include "relocatable.h"
