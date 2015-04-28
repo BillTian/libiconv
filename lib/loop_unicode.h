@@ -20,6 +20,9 @@
 
 /* This file defines the conversion loop via Unicode as a pivot encoding. */
 
+/* [2014-12-25 13:22:00 Bill Tian] */
+#include "iconv.h"
+
 /* Attempt to transliterate wc. Return code as in xxx_wctomb. */
 static int unicode_transliterate (conv_t cd, ucs4_t wc,
                                   unsigned char* outptr, size_t outleft)

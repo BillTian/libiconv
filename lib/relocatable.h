@@ -36,7 +36,7 @@ extern "C" {
 #elif defined _MSC_VER && BUILDING_DLL
 # define RELOCATABLE_DLL_EXPORTED __declspec(dllexport)
 #else
-# define RELOCATABLE_DLL_EXPORTED
+# define RELOCATABLE_DLL_EXPORTED __declspec(dllimport)
 #endif
 
 /* Sets the original and the current installation prefix of the package.
@@ -73,7 +73,7 @@ extern char * compute_curr_prefix (const char *orig_installprefix,
 /* By default, we use the hardwired pathnames.  */
 #define relocate(pathname) (pathname)
 
-#endif
+#endif /* ENABLE_RELOCATABLE */
 
 
 #ifdef __cplusplus

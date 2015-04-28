@@ -22,7 +22,7 @@
 #include <config.h>
 
 /* Specification.  */
-#include "localcharset.h"
+/*#include <localcharset.h>*/
 
 #include <fcntl.h>
 #include <stddef.h>

@@ -21,6 +21,9 @@
     <ClCompile Include="..\libcharset\lib\localcharset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\lib\relocatable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\iconv.h">
